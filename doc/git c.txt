@@ -1,0 +1,8 @@
+first time
+git checkout -b samayun
+
+
+git add.
+git commit -m "commit name"
+git fetch && git pull origin Development
+git push origin branchName(personal name)
