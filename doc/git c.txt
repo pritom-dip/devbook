@@ -4,6 +4,6 @@ git checkout -b linkon
 
 
 git add .
-git commit -m "commit name"
+git commit -m "DevBook"
 git fetch && git pull origin Development
-git push origin branchName(personal name)
+git push origin linkon
