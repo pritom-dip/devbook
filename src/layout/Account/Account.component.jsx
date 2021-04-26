@@ -1,11 +1,11 @@
 import React from "react";
 import "./Account.css";
-import FeedbackRow from "./AccountRows/FeedbackRow";
-import ProfileRow from "./AccountRows/ProfileRow";
-import SettingRow from "./AccountRows/SettingRow";
-import HelpRow from "./AccountRows/HelpRow";
-import DisplayRow from "./AccountRows/DisplayRow";
-import LogOutRow from "./AccountRows/LogOutRow";
+import FeedbackRow from "./AccountRows/FeedbackRow.component";
+import ProfileRow from "./AccountRows/ProfileRow.component";
+import SettingRow from "./AccountRows/SettingRow.component";
+import HelpRow from "./AccountRows/HelpRow.component";
+import DisplayRow from "./AccountRows/DisplayRow.component";
+import LogOutRow from "./AccountRows/LogOutRow.component";
 
 const Account = () => {
 	return (
