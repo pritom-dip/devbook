@@ -17,7 +17,7 @@ const NavbarLastPart = () => {
 
 	return (
 		<div className="navbarLastPart  ">
-			<Button>Profile</Button>
+			<Link to='/profile'><Button>Profile</Button></Link>
 			<OverlayTrigger
 				placement="bottom"
 				overlay={renderTooltip("Message")}
