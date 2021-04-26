@@ -14,8 +14,8 @@ export default function RightSidebarComponent() {
                             <div className="request-details-container">
                                 <h4> <small> <strong>{post.name}</strong> </small> </h4>
                                     <p>1 mutual friends</p>
-                                    <button type="button" class="btn btn-outline-primary p-1 me-1">Confirm</button>
-                                    <button type="button" class="btn btn-outline-danger p-1 ms-1">Delete</button>
+                                    <button type="button" class="btn btn-outline-primary p-1 me-1">Add Dev</button>
+                                    <button type="button" class="btn btn-outline-danger p-1 ms-1">Remove</button>
                             </div>
                         </div>
                         )

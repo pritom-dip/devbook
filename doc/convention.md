@@ -8,3 +8,4 @@
 
 Linkon: 1 .Added PostData File to the src for make some fake posts to show home page
         2. Install React Font Awesome
+        3.Added Right Sideber
