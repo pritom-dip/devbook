@@ -33,7 +33,7 @@ const NavbarMiddlePart = () => {
 
 			<OverlayTrigger
 				placement="bottom"
-				overlay={renderTooltip("Pages")}
+				overlay={renderTooltip("Page")}
 			>
 				<Link>
 					<div className="middleMenuPart">
