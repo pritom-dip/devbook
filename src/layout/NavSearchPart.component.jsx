@@ -7,7 +7,7 @@ const NavSearchPart = () => {
 				<input
 					class="form-control mr-sm-2"
 					type="search"
-					placeholder="Search"
+					placeholder="Search Your Friends"
 					aria-label="Search"
 				/>
 			</form>
