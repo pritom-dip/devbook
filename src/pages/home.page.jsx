@@ -6,7 +6,7 @@ import RightSidebarComponent from "../components/Home/RightSidebar/RightSidebar.
 export default function HomePage() {
     return (
         <>
-            <Container fluid>
+            <Container fluid style={{backgroundColor: '#f0f2f5'}}>
                 <Row>
                     <Col xs={12} md={3}>
                         <LeftSidebarComponent />

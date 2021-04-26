@@ -20,7 +20,7 @@ export default function PostCardComponent() {
     }
 
     return (
-        <div className="container mt-5 pt-5">
+        <div className="container mt-5 pt-5" style={{backgroundColor: '#f0f2f5'}}>
             {/* Facebook Status Form */}
 
                 <div>
