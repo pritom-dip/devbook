@@ -2,7 +2,7 @@ import { useState } from 'react';
 import postData from '../../../postData/postData.json';
 import { Button, Card, Image, Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShare, faHeart, faCommentAlt, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons';
+import { faShare, faHeart, faCommentAlt, faHeadphonesAlt, faVideo, faImage } from '@fortawesome/free-solid-svg-icons';
 import './PostCard.css';
 
 export default function PostCardComponent() {
@@ -27,8 +27,8 @@ export default function PostCardComponent() {
                     <input class="form-control status-form" type='text' placeholder="What's on your mind"></input>
                     <div className="status-btn m-3 text-center">
                         <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
-                        <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
-                        <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
+                        <button><FontAwesomeIcon icon={faVideo} size="lg"/> <span  className="p-2">Video</span></button>
+                        <button><FontAwesomeIcon icon={faImage} size="lg"/> <span  className="p-2">Image</span></button>
                     </div>
                 </div>
 
