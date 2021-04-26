@@ -1,0 +1,66 @@
+.profilePart,
+.feedbackPart,
+.settingPart,
+.HelpRowPart,
+.displayPart,
+.logOutPart {
+	color: black;
+}
+.profilePart img {
+	width: 60px;
+	margin-right: 12px;
+}
+.profilePart a,
+.feedbackPart a,
+.settingPart a,
+.HelpRowPart a,
+.displayPart a,
+.logOutPart a {
+	color: black;
+}
+.profilePart p,
+.feedbackPart p,
+.settingPart p,
+.HelpRowPart p,
+.displayPart p,
+.logOutPart p {
+	color: rgba(0, 0, 0, 0.657);
+	line-height: 0.5;
+}
+.profilePart a:hover,
+.feedbackPart a:hover,
+.settingPart a:hover,
+.HelpRowPart a:hover,
+.displayPart a:hover,
+.logOutPart a:hover {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.849);
+}
+
+.settingText,
+.helpPartText,
+.displayPartText,
+.logOutPartText {
+	width: 250px;
+}
+
+/* special Icon */
+.special-icon-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	padding: 10px;
+	border-radius: 100px;
+	margin: 0 20px;
+	color: rgba(0, 0, 0, 0.712);
+	background-color: #e4e6eb;
+	cursor: pointer;
+}
+
+.special-icon-style:hover {
+	text-decoration: none;
+	background-color: #f0f2f8;
+	color: rgba(0, 0, 0, 0.712);
+}

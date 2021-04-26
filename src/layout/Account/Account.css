@@ -1,0 +1,27 @@
+.AccountPart {
+	height: 450px;
+	width: 400px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 70px;
+	right: 40px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+	z-index: 2;
+}
+.accountPartRow {
+	height: 70px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+}
+.accountPartRow:hover {
+	background-color: #f0f2f5;
+}
+
+.specialLine {
+	width: 99%;
+	border-bottom: 0.5px solid gray;
+	margin: 2px 0px;
+}
