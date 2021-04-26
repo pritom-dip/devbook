@@ -1,0 +1,66 @@
+.navbarPart {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	margin-bottom: 30px;
+	padding: 10px 20px;
+	background-color: white;
+	z-index: 2;
+}
+
+/* logoAndSearchPart */
+.logoAndSearchPart form {
+}
+/* middle Navbar Part */
+.middleNavPart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.middleMenuPart {
+	padding: 15px 30px;
+	width: 100px;
+	margin: 0 30px;
+	color: rgba(0, 0, 0, 0.712);
+}
+
+.middleMenuPart:hover {
+	text-decoration: none;
+	background-color: #e4e6eb;
+	color: rgba(0, 0, 0, 0.712);
+	border-radius: 10px;
+}
+
+/* Nav Last Part */
+.navbarLastPart {
+	display: flex;
+	align-items: center;
+}
+.navbarLastPart button {
+	width: 100px;
+}
+.lastMenuPart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	padding: 10px;
+	border-radius: 100px;
+	margin: 0 20px;
+	color: rgba(0, 0, 0, 0.712);
+	background-color: #e4e6eb;
+	cursor: pointer;
+}
+
+.lastMenuPart:hover {
+	text-decoration: none;
+	background-color: #f0f2f8;
+	color: rgba(0, 0, 0, 0.712);
+}
+
+.logoAndSearchPart {
+	width: 22%;
+}
