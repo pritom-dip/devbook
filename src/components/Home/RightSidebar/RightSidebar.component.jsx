@@ -2,7 +2,7 @@ import './RightSidebar.css';
 import postData from '../../../postData/postData.json';
 export default function RightSidebarComponent() {
     return (
-        <div className="right-sidebar-container">
+        <div className="right-sidebar-container mt-5 pt-5">
             <div>
                 <h6 className="pb-3 text-center"> <strong>Suggested friends on Devbook</strong> </h6>
                 {

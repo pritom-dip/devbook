@@ -20,7 +20,7 @@ export default function PostCardComponent() {
     }
 
     return (
-        <div className="container">
+        <div className="container mt-5 pt-5">
             {/* Facebook Status Form */}
 
                 <div>

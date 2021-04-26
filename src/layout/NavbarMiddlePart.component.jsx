@@ -20,7 +20,7 @@ const NavbarMiddlePart = () => {
 				placement="bottom"
 				overlay={renderTooltip("Home")}
 			>
-				<Link>
+				<Link to='/home'>
 					{" "}
 					<div className="middleMenuPart">
 						<FontAwesomeIcon
