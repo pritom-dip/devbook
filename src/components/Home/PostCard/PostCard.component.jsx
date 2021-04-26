@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import postData from '../../../postData/postData.json';
-import { Button, Card, Image } from 'react-bootstrap';
+import { Button, Card, Image, Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShare, faHeart, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
+import { faShare, faHeart, faCommentAlt, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons';
 import './PostCard.css';
 
 export default function PostCardComponent() {
+
     const userPosts = postData;
     const [likeColor, setLikeColor] = useState('');
-    const [commentColor, setCommentColor] = useState('');
-    console.log(userPosts);
 
+    // const [commentColor, setCommentColor] = useState('');
+    // console.log(userPosts);
+
+    //Handle React btn Color and Data manage
     const handleLike = (id) => {
         console.log(id)
         setLikeColor(likeColor ? '' : 'red') 
@@ -18,6 +21,18 @@ export default function PostCardComponent() {
 
     return (
         <div className="container">
+            {/* Facebook Status Form */}
+
+                <div>
+                    <input class="form-control status-form" type='text' placeholder="What's on your mind"></input>
+                    <div className="status-btn m-3 text-center">
+                        <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
+                        <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
+                        <button><FontAwesomeIcon icon={faHeadphonesAlt} size="lg"/> <span  className="p-2">Live</span></button>
+                    </div>
+                </div>
+
+            {/* Facebook Post Showing */}
             <div>
                 {
                     userPosts.map(post => 
