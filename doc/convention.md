@@ -5,3 +5,6 @@
   CapitalCase Hobe
 - routes list e add korar jonno ki korte hobe mathay kaj korche na pore bolbo neh :smile:
 - lazy loading use kora valo [optional]
+
+Linkon: 1 .Added PostData File to the src for make some fake posts to show home page
+        2. Install React Font Awesome
