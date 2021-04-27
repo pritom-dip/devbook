@@ -1,0 +1,23 @@
+.leftSidebarPart {
+	margin-top: 80px;
+	height: 540px;
+	padding: 2px;
+	position: fixed;
+}
+
+.leftSidebarPart:hover {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.leftSidebarRow {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding: 7px;
+	border-radius: 10px;
+}
+
+.leftSidebarRow:hover {
+	background-color: #bdbec0d2;
+}
