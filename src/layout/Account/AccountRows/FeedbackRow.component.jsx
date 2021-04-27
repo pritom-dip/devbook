@@ -7,7 +7,7 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 const FeedbackRow = () => {
 	return (
-		<div className="feedbackPart ">
+		<div className="feedbackPart account-row-style ">
 			<Link to="" className="d-flex align-items-center">
 				<div className="special-icon-style">
 					<FontAwesomeIcon

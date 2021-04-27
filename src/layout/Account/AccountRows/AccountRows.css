@@ -1,38 +1,18 @@
-.profilePart,
-.feedbackPart,
-.settingPart,
-.HelpRowPart,
-.displayPart,
-.logOutPart {
+.account-row-style {
 	color: black;
 }
 .profilePart img {
 	width: 60px;
 	margin-right: 12px;
 }
-.profilePart a,
-.feedbackPart a,
-.settingPart a,
-.HelpRowPart a,
-.displayPart a,
-.logOutPart a {
+.account-row-style a {
 	color: black;
 }
-.profilePart p,
-.feedbackPart p,
-.settingPart p,
-.HelpRowPart p,
-.displayPart p,
-.logOutPart p {
+.account-row-style p {
 	color: rgba(0, 0, 0, 0.657);
 	line-height: 0.5;
 }
-.profilePart a:hover,
-.feedbackPart a:hover,
-.settingPart a:hover,
-.HelpRowPart a:hover,
-.displayPart a:hover,
-.logOutPart a:hover {
+.account-row-style a:hover {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.849);
 }
