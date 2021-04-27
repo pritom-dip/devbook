@@ -5,7 +5,7 @@ import profileImage from "../../../Images/image1.png";
 
 const ProfileRow = () => {
 	return (
-		<div className="profilePart ">
+		<div className="profilePart account-row-style">
 			<Link to="/profile" className="d-flex align-items-center">
 				<div className="profilePhoto">
 					<img src={profileImage} alt="" />

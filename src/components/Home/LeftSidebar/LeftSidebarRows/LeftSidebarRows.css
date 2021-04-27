@@ -1,0 +1,23 @@
+.left-sidebar-rows-style {
+	color: black;
+}
+
+.leftSidebarProfilePart img {
+	width: 50px;
+	margin-right: 12px;
+}
+.left-sidebar-rows-style a {
+	width: 300px;
+	height: 58px;
+
+	color: black;
+}
+.left-sidebar-rows-style a:hover {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.849);
+}
+
+/* custom style */
+.leftSidebarBloodDonationsPart img {
+	width: 30px;
+}

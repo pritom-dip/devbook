@@ -10,7 +10,7 @@ import {
 
 const HelpRow = () => {
 	return (
-		<div className="HelpRowPart ">
+		<div className="HelpRowPart account-row-style">
 			<Link to="" className="d-flex align-items-center">
 				<div className="special-icon-style">
 					<FontAwesomeIcon

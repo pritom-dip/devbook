@@ -18,7 +18,7 @@ const NavbarLastPart = () => {
 	const [isAccountClick, setIsAccountClick] = useState("none");
 
 	const accountClickHandle = () => {
-		isAccountClick == "none"
+		isAccountClick === "none"
 			? setIsAccountClick("block")
 			: setIsAccountClick("none");
 	};

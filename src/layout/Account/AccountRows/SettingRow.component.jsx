@@ -7,7 +7,7 @@ import { faCog, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const SettingRow = () => {
 	return (
-		<div className="settingPart ">
+		<div className="settingPart account-row-style">
 			<Link to="" className="d-flex align-items-center">
 				<div className="special-icon-style">
 					<FontAwesomeIcon

@@ -7,7 +7,7 @@ import { faMoon, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 const DisplayRow = () => {
 	return (
-		<div className="displayPart ">
+		<div className="displayPart account-row-style">
 			<Link to="" className="d-flex align-items-center">
 				<div className="special-icon-style">
 					<FontAwesomeIcon
