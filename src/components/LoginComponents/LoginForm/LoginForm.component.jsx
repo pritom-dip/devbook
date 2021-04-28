@@ -1,4 +1,5 @@
 import React from "react";
+import "./LoginForm.css";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
@@ -6,7 +7,6 @@ const LoginForm = () => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm();
 	const onSubmit = (data) => console.log(data);
@@ -23,7 +23,10 @@ const LoginForm = () => {
 						})}
 					/>
 					{errors.email && (
-						<span>This field is required</span>
+						<p className="error-message-style">
+							Please enter your valid email
+							❗❗
+						</p>
 					)}
 				</Form.Group>
 
@@ -37,7 +40,9 @@ const LoginForm = () => {
 						})}
 					/>
 					{errors.password && (
-						<span>This field is required</span>
+						<p className="error-message-style">
+							Please enter your password ❗❗
+						</p>
 					)}
 				</Form.Group>
 

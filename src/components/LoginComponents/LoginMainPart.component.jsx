@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import LoginForm from "./LoginForm/LoginForm";
+import LoginForm from "./LoginForm/LoginForm.component";
 import "./LoginMainPart.css";
 import Modal from "react-modal";
-import CreatNewAccountForm from "./RegisterForm/CreatNewAccountForm";
+import CreatNewAccountForm from "./RegisterForm/CreatNewAccountForm.component";
 
 const customStyles = {
 	content: {
@@ -59,7 +59,9 @@ const LoginMainPart = () => {
 							style={customStyles}
 							contentLabel="Example Modal"
 						>
-							<CreatNewAccountForm />
+							<CreatNewAccountForm
+								closeModal={closeModal}
+							/>
 						</Modal>
 					</div>
 				</div>
