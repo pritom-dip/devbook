@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./CreateNewAccount.css";
 import { Button, Col, Form, Modal } from "react-bootstrap";
-import DatePicker from "react-datepicker";
+// import DatePicker from "react-datepicker";
 
-import "react-datepicker/dist/react-datepicker.css";
+// import "react-datepicker/dist/react-datepicker.css";
 import { useForm } from "react-hook-form";
 
 const CreatNewAccountForm = () => {
@@ -99,13 +99,13 @@ const CreatNewAccountForm = () => {
 						>
 							Date of birth
 						</Form.Label>
-						<DatePicker
+						{/* <DatePicker
 							locale="es"
 							selected={startDate}
 							onChange={(date) =>
 								setStartDate(date)
 							}
-						/>
+						/> */}
 					</Form.Group>
 
 					<Form.Row>

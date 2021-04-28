@@ -3,5 +3,6 @@ import { authReducers } from "./authReducers";
 
 export const rootReducers = combineReducers({
     auth: authReducers
-    // cart: cartReducer
+    // cart: cartReducer,
+    // product: productReducer
 })

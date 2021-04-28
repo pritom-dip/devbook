@@ -1,15 +1,26 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../../actions/authActions";
 
 const LoginForm = () => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm();
-	const onSubmit = (data) => console.log(data);
+
+	const dispatch = useDispatch();
+	const auth = useSelector(state => state.auth);
+	// const cart = useSelector(state => state.cart);
+
+	console.log(auth);
+
+	const onSubmit = (data) => {
+		dispatch(login(data));
+	}
+
 	return (
 		<div className="mt-3 mb-3">
 			<Form onSubmit={handleSubmit(onSubmit)}>
@@ -55,3 +66,12 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+// mapStateToDispatch={
+// 	addToCart : AddToCart
+// }
+
+// mapStateToProps = (state) => {
+// 	cart: state.cart,
+// 	product: state.product
+// }
