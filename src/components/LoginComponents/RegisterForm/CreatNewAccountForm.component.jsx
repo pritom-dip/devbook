@@ -1,6 +1,9 @@
 import React from "react";
 import "./CreateNewAccount.css";
 import { Button, Col, Form, Modal } from "react-bootstrap";
+// import DatePicker from "react-datepicker";
+
+// import "react-datepicker/dist/react-datepicker.css";
 
 import { useForm } from "react-hook-form";
 
@@ -101,12 +104,13 @@ const CreatNewAccountForm = ({ closeModal }) => {
 							type="submit"
 							className="w-100"
 						>
+
 							Sign Up
 						</Button>
 					</div>
-				</Form>
-			</Modal.Body>
-		</div>
+				</Form >
+			</Modal.Body >
+		</div >
 	);
 };
 
