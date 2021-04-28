@@ -16,60 +16,61 @@ const NavbarMiddlePart = () => {
 
 	return (
 		<div className="middleNavPart">
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Home")}
-			>
-				<Link>
-					{" "}
+			<Link to="/home">
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Home")}
+				>
 					<div className="middleMenuPart">
 						<FontAwesomeIcon
 							style={{ fontSize: "20px" }}
 							icon={faHome}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
+				</OverlayTrigger>
+			</Link>
 
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Page")}
-			>
-				<Link>
+			<Link>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Page")}
+				>
 					<div className="middleMenuPart">
 						<FontAwesomeIcon
 							style={{ fontSize: "20px" }}
 							icon={faFlag}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Groups")}
-			>
-				<Link>
+				</OverlayTrigger>
+			</Link>
+
+			<Link>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Groups")}
+				>
 					<div className="middleMenuPart">
 						<FontAwesomeIcon
 							style={{ fontSize: "20px" }}
 							icon={faUsers}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Video")}
-			>
-				<Link>
+				</OverlayTrigger>{" "}
+			</Link>
+
+			<Link>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Video")}
+				>
 					<div className="middleMenuPart">
 						<FontAwesomeIcon
 							style={{ fontSize: "20px" }}
 							icon={faVideo}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
+				</OverlayTrigger>
+			</Link>
 		</div>
 	);
 };
