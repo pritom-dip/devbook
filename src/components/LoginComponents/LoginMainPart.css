@@ -1,0 +1,11 @@
+.LoginMainPart {
+	margin-top: 70px;
+	background-color: #f0f2f5;
+	height: 600px;
+}
+
+.main-login-colum {
+	height: 350px;
+	background-color: white;
+	border-radius: 15px;
+}

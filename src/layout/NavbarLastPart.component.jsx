@@ -28,11 +28,12 @@ const NavbarLastPart = () => {
 			<Link to="/profile">
 				<Button>Profile</Button>
 			</Link>
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Message")}
-			>
-				<Link>
+
+			<Link>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Message")}
+				>
 					<div className="lastMenuPart">
 						{" "}
 						<FontAwesomeIcon
@@ -40,14 +41,14 @@ const NavbarLastPart = () => {
 							icon={faCommentDots}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Notification")}
-			>
-				<Link>
-					{" "}
+				</OverlayTrigger>
+			</Link>
+
+			<Link>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Notification")}
+				>
 					<div className="lastMenuPart">
 						{" "}
 						<FontAwesomeIcon
@@ -55,14 +56,14 @@ const NavbarLastPart = () => {
 							icon={faBell}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
-			<OverlayTrigger
-				placement="bottom"
-				overlay={renderTooltip("Account")}
-			>
-				<Link onClick={accountClickHandle}>
-					{" "}
+				</OverlayTrigger>
+			</Link>
+
+			<Link onClick={accountClickHandle}>
+				<OverlayTrigger
+					placement="bottom"
+					overlay={renderTooltip("Account")}
+				>
 					<div className="lastMenuPart">
 						{" "}
 						<FontAwesomeIcon
@@ -70,8 +71,9 @@ const NavbarLastPart = () => {
 							icon={faCaretDown}
 						/>
 					</div>
-				</Link>
-			</OverlayTrigger>
+				</OverlayTrigger>
+			</Link>
+
 			<div style={{ display: isAccountClick }}>
 				<Account />
 			</div>
