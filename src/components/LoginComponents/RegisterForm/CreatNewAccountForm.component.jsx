@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CreateNewAccount.css";
 import { Button, Col, Form, Modal } from "react-bootstrap";
 // import DatePicker from "react-datepicker";
 
 // import "react-datepicker/dist/react-datepicker.css";
+
 import { useForm } from "react-hook-form";
 
-const CreatNewAccountForm = () => {
-	const [startDate, setStartDate] = useState(new Date());
+const CreatNewAccountForm = ({ closeModal }) => {
 	const {
 		register,
 		handleSubmit,
-		watch,
 		formState: { errors },
 	} = useForm();
 	const onSubmit = (data) => console.log(data);
 
 	return (
 		<div className="createNewAccountFormStyle">
-			<Modal.Header closeButton>
+			<Modal.Header className="d-flex justify-content-between">
 				<Modal.Title>DevBook</Modal.Title>
+				<Button
+					variant="danger"
+					onClick={() => closeModal()}
+				>
+					X
+				</Button>
 			</Modal.Header>
 
 			<Modal.Body>
@@ -37,10 +42,10 @@ const CreatNewAccountForm = () => {
 								)}
 							/>
 							{errors.firstName && (
-								<span>
-									This field is
-									required
-								</span>
+								<p className="error-message-style">
+									Please enter
+									first name
+								</p>
 							)}
 						</Form.Group>
 
@@ -56,10 +61,10 @@ const CreatNewAccountForm = () => {
 								)}
 							/>
 							{errors.lastName && (
-								<span>
-									This field is
-									required
-								</span>
+								<p className="error-message-style">
+									Please enter your
+									last name
+								</p>
 							)}
 						</Form.Group>
 					</Form.Row>
@@ -72,9 +77,9 @@ const CreatNewAccountForm = () => {
 							})}
 						/>
 						{errors.email && (
-							<span>
-								This field is required
-							</span>
+							<p className="error-message-style">
+								Please enter your email
+							</p>
 						)}
 					</Form.Group>
 
@@ -87,67 +92,25 @@ const CreatNewAccountForm = () => {
 							})}
 						/>
 						{errors.password && (
-							<span>
-								This field is required
-							</span>
+							<p className="error-message-style">
+								Please enter a password
+							</p>
 						)}
 					</Form.Group>
 
-					<Form.Group controlId="formGridAddress2">
-						<Form.Label
-							style={{ fontSize: "15px" }}
+					<div className="w-75 ml-auto mr-auto">
+						<Button
+							variant="primary"
+							type="submit"
+							className="w-100"
 						>
-							Date of birth
-						</Form.Label>
-						{/* <DatePicker
-							locale="es"
-							selected={startDate}
-							onChange={(date) =>
-								setStartDate(date)
-							}
-						/> */}
-					</Form.Group>
 
-					<Form.Row>
-						<Form.Group
-							as={Col}
-							controlId="formGridCity"
-						>
-							<Form.Label>City</Form.Label>
-							<Form.Control />
-						</Form.Group>
-
-						<Form.Group
-							as={Col}
-							controlId="formGridState"
-						>
-							<Form.Label>State</Form.Label>
-							<Form.Control
-								as="select"
-								defaultValue="Choose..."
-							>
-								<option>
-									Choose...
-								</option>
-								<option>...</option>
-							</Form.Control>
-						</Form.Group>
-
-						<Form.Group
-							as={Col}
-							controlId="formGridZip"
-						>
-							<Form.Label>Zip</Form.Label>
-							<Form.Control />
-						</Form.Group>
-					</Form.Row>
-
-					<Button variant="primary" type="submit">
-						Sign Up
-					</Button>
-				</Form>
-			</Modal.Body>
-		</div>
+							Sign Up
+						</Button>
+					</div>
+				</Form >
+			</Modal.Body >
+		</div >
 	);
 };
 
