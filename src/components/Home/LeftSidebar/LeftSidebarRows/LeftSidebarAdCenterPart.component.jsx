@@ -19,7 +19,7 @@ const LeftSidebarAdCenterPart = () => {
 					<div
 						style={{
 							fontSize: "18px",
-							fontWeight: "500",
+							fontWeight: "400",
 						}}
 					>
 						Ad Center
